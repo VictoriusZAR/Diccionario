@@ -1,0 +1,19 @@
+meme_dict = {
+    "CRINGE": "Algo excepcionalmente raro o embarazoso",
+    "LOL": "Una respuesta común a algo gracioso",
+    "XD": "una cara de risa",
+    "CREEPY": "algo aterrador que da miedo",
+    "BOOMER": "Persona que se aferra mucho al pasado",
+    "PA": "para",
+    "TROLLEAR": "hacer una broma"
+}
+
+word = input("Escribe una palabra que no entiendas (¡con mayúsculas!): ")
+
+for i in range(5):
+    if word in meme_dict:
+        print(f"El significado de '{word}' es: {meme_dict[word]}")
+        break
+    else:
+        print(f"La palabra '{word}' no se encuentra en el diccionario.")
+        word = input("Intenta con otra palabra (¡con mayúsculas!): ")
